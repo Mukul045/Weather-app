@@ -30,6 +30,7 @@ const WeatherApp = () => {
 
     useEffect(() => {
         const fetchDefault = async () => {
+            document.title = "Weather App - Mukul Sharma"; 
             let delhiWeather = await getWeatherInfo("Delhi");
             if (delhiWeather) {
                 setWeatherInfo(delhiWeather);
